@@ -41,7 +41,7 @@ assertThat(lateBound.newInstance()).isInstanceOf(LinkedList.class);
 
 * `groupId`: `org.typeunsafe`
 * `artifactId`: `late-bound`
-* `version`: (to be released)
+* `version`: `0.1`
 
 ## License
 

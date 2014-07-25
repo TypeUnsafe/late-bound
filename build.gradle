@@ -34,3 +34,34 @@ test.testLogging {
 task wrapper(type: Wrapper) {
     gradleVersion = '2.0'
 }
+
+modifyPom {
+    project {
+        name 'Late-Bound'
+        description 'A no-fluff late-binding helper for Java.'
+        url 'https://github.com/TypeUnsafe/late-bound'
+        inceptionYear '2014'
+
+        scm {
+            url 'https://github.com/TypeUnsafe/late-bound'
+            connection 'scm:https://git@github.com/TypeUnsafe/late-bound.git'
+            developerConnection 'scm:git://github.com/TypeUnsafe/late-bound.git'
+        }
+
+        licenses {
+            license {
+                name 'MIT License'
+                url 'http://opensource.org/licenses/MIT'
+                distribution 'repo'
+            }
+        }
+
+        developers {
+            developer {
+                id 'jponge'
+                name 'Julien Ponge'
+                email 'julien.ponge@insa-lyon.fr'
+            }
+        }
+    }
+}
